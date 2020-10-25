@@ -1,0 +1,11 @@
+#item-content {
+  background-color: var(--main-bg-color);
+  padding: 10rem 1rem;
+  display: flex;
+}
+
+@media (max-width: 764px) {
+  #item-content {
+    flex-direction: column;
+  }
+}

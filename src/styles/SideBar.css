@@ -1,0 +1,78 @@
+#sidebar {
+  width: 30rem;
+  min-width: 30rem;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 4px;
+  height: 100%;
+}
+
+.item-info {
+  padding: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item-info img {
+  width: 100%;
+  height: auto;
+}
+
+.item-info h4 {
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.item-info p {
+  font-weight: 300;
+  color: rgb(200, 200, 200);
+  font-size: 1.1rem;
+}
+
+.tags {
+  border-top: 1px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--main-bg-color);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag-item {
+  border: 1px solid var(--main-bg-color);
+  border-radius: 5px;
+  padding: 0.3rem 1.2rem;
+  margin: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav button.tab {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 2rem;
+  width: 100%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+.sidenav button.active {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  opacity: 1;
+}
+
+.sidenav button img {
+  width: 2rem;
+  height: auto;
+  margin-right: 1rem;
+}
