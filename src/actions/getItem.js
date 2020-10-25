@@ -4,7 +4,9 @@ export const GET_ITEM_FAIL = 'GET_ITEM_FAIL';
 
 export const getItemRequest = (title) => ({
   type: GET_ITEM_REQUEST,
-  payload: title,
+  payload: {
+    title,
+  },
 });
 
 export const getItemSuccess = (item) => ({

@@ -8,7 +8,8 @@ import itemData from '../data/Webdev_data2.json';
 
 function* getItemRequest(action) {
   try {
-    const data = itemData; // Asynchronous API Call
+    const { title } = action.payload;
+    const data = itemData; // Asynchronous API Call for title
     yield put(getItemSuccess(data[0]));
   } catch (error) {
     yield put(getItemFail(error.message));
